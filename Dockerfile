@@ -10,7 +10,6 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN pip install tesseract
-RUN pip install tesseract-ocr
 
 # Gereksinim dosyasını kopyala ve kur
 COPY requirements.txt .
